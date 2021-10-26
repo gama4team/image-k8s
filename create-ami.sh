@@ -1,4 +1,4 @@
-cd ../2-terraform-ami/
+cd 2-terraform-ami/
 
 /usr/bin/terraform init
 /usr/bin/terraform fmt
