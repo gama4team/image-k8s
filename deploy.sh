@@ -15,4 +15,4 @@ echo "Aguardando criação de maquinas ..."
 sleep 20 # 20 segundos
 
 cd ../1-ansible
-ansible-playbook -i hosts provisionar.yml -u ubuntu --private-key /var/lib/jenkins/.ssh/id_rsa
+ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts provisionar.yml -u ubuntu --private-key /var/lib/jenkins/.ssh/id_rsa
